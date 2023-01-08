@@ -2,7 +2,7 @@ const tableData = () => {
     const searchData = [];
     const tableEl = document.getElementById('data-table');
     Array.from(tableEl.children[1].children).forEach(_bodyRowEl => {
-        searchData.push(Array.from(_bodyRowEl.children).map(_cellEl =>{
+        searchData.push(Array.from(_bodyRowEl.children).map(_cellEl => {
             return _cellEl.innerText;
         }));
     });
@@ -10,26 +10,26 @@ const tableData = () => {
 }
 
 
-const creatSearchInputElemnt = () =>{
-    const el= document.createElement('input');
+const creatSearchInputElemnt = () => {
+    const el = document.createElement('input');
     el.classList.add('search-input');
     el.id = 'search-input';
     return el;
 }
 
-const search = (arr, searchTerm) =>{
-    if(!searchTerm) return arr;
+const search = (arr, searchTerm) => {
+    if (!searchTerm) return arr;
     return arr.filter(_row => {
         return _row.find(_item => _item.toLowerCase().includes(searchTerm.toLowerCase()))
     });
 }
-const refreshTable = (data) =>{
+const refreshTable = (data) => {
     const tableBody = document.getElementById('data-table').children[1];
-    tableBody.innerText='';
-    
-    data.forEach(_row =>{
+    tableBody.innerText = '';
+
+    data.forEach(_row => {
         const curRow = document.createElement('tr');
-        _row.forEach(_dataItem =>{
+        _row.forEach(_dataItem => {
             const curCell = document.createElement('td');
             curCell.innerText = _dataItem;
             curRow.appendChild(curCell);
@@ -37,10 +37,10 @@ const refreshTable = (data) =>{
         tableBody.appendChild(curRow);
     });
 }
-const init = () =>{
+const init = () => {
     document.getElementById('search-root').appendChild(creatSearchInputElemnt());
 
-    const initialTableData= tableData();
+    const initialTableData = tableData();
 
     const searchInput = document.getElementById('search-input');
     searchInput.addEventListener('keyup', (e) => {
@@ -51,4 +51,3 @@ const init = () =>{
 init();
 
 
-   
