@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>World Wide CO²-Footprint</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div dir="auto">
+            <nav class="nav-header">
+                <a href="index.html">
+                    <img class="logo" src="img/logo.png" alt="logo picture">
+                </a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Homepage</a></li>
+                    <li><a href="contact.html">Kontakt</a></li>
+                    <li><a href="about.html">Über uns</a></li>
+                </ul>
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="homepage-info">
+        <h1>Willkommen bei World Wide CO²-Footprint</h1>
+        <p>World Wide CO²-Footprint ist ein Non-Profit Organisation, die sich die Aufgabe stellt
+            mehr Transparenz darüber zuschaffen, welche Unternehmen und Länder wie viel CO² jährlich emittieren.</p>
+    </div>
+
+
+    <div class="Emissionsdaten">
+        <h2> Weltweite jährliche CO²-Emissionsdaten in Ländern und deren Unternehmen</h2>
+
+        <div id="search-root"></div>
+        <table class="table-sortable" id="data-table">
+            <thead>
+                <tr>
+                    <th>Land</th>
+                    <th>CO2-Emissionen in Mio. t pro Land</th>
+                    <th>Unternehmen</th>
+                    <th>CO2-Emissionen in Mio. t pro Unternehmen </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Frankreich</td>
+                    <td>11000</td>
+                    <td>Citroën</td>
+                    <td>100</td>
+                </tr>
+                <tr>
+                    <td>China</td>
+                    <td>350000</td>
+                    <td>Dongfeng</td>
+                    <td>500</td>
+                </tr>
+                <tr>
+                    <td>Amerika</td>
+                    <td>200000</td>
+                    <td>Hummer</td>
+                    <td>300</td>
+                </tr>
+                <tr>
+                    <td>Deutschland</td>
+                    <td>25000</td>
+                    <td>BMW</td>
+                    <td>400</td>
+                </tr>
+                <tr>
+                    <td>Japan</td>
+                    <td>16000</td>
+                    <td>Toyota</td>
+                    <td>800</td>
+                </tr>
+                <tr>
+                    <td>Russland</td>
+                    <td>150000</td>
+                    <td>KAMAZ</td>
+                    <td>900</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <footer>
+        <nav>
+            <ul>
+                <div class="nav-footer">
+                    <div class="credits">Created my design at LogoMakr.com</div>
+                    <li><a href="privacy.html">Datenschutz</a></li>
+                    <li><a href="imprint.html">Impressum</a></li>
+                </div>
+            </ul>
+        </nav>
+    </footer>
+    <script src="js/hamburger.js"></script>
+    <script src="js/tablefilter.js"></script>
+    <script src="js/tablesort.js"></script>
+</body>
+
+</html>
